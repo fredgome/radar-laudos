@@ -1,1 +1,311 @@
-placeholder
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Laudo Radar de Perfil</title>
+
+<style>
+  @page {
+    size: A4;
+    margin: 5mm 5mm 10mm 5mm;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #1A1A1A;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  p { margin: 0 0 5px 0; }
+  table { border-collapse: collapse; }
+  .wrap { padding: 0 32px; }
+  .section {
+    margin-bottom: 14px;
+    page-break-inside: avoid;
+  }
+  .section-title {
+    font-size: 19px;
+    font-weight: 700;
+    color: #1A4A4A;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 3px solid #2D7DD2;
+    padding-bottom: 6px;
+    margin: 0 0 10px 0;
+    page-break-after: avoid;
+  }
+  .card {
+    border: 1px solid #d0d0d0;
+    padding: 12px;
+    page-break-inside: avoid;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+  .no-orphan {
+    page-break-inside: avoid;
+  }
+  /* Padrão tipográfico dos bullets de sugestão: 13px — NÃO ALTERAR.
+     Make.com deve envolver cada item de improved_bullets[] em:
+     <p style="font-size: 13px; color: #1A1A1A; line-height: 1.55; margin: 0 0 6px 0;">• texto</p> */
+</style>
+</head>
+<body>
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td style="background-color: #1A4A4A; padding: 16px 32px; text-align: center;">
+      <p style="color: white; font-size: 22px; font-weight: bold; margin: 0; letter-spacing: 1px;">RADAR DE PERFIL</p>
+      <p style="color: #7EC8C8; font-size: 12px; margin: 4px 0 0 0; letter-spacing: 2.5px; text-transform: uppercase;">Auditoria de Perfil Profissional</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding: 8px 32px; border-bottom: 3px solid #2D7DD2; background-color: #f4f4f4;">
+      <span style="font-size: 12px; color: #333333;">
+        Profissional: <strong style="color: #1A1A1A;">Willian — WKreativ Solutions</strong>
+        &nbsp;&nbsp;|&nbsp;&nbsp; Data: <strong style="color: #1A1A1A;">21/03/2026</strong>
+        &nbsp;&nbsp;|&nbsp;&nbsp; Tipo: <strong style="color: #1A1A1A;">COM_JD</strong>
+      </span>
+    </td>
+  </tr>
+</table>
+
+
+<div class="wrap" style="padding-top: 12px;">
+  <div class="section">
+    <table width="100%" cellpadding="14" cellspacing="0" border="0" style="background-color: #F0F7FF; border-left: 5px solid #2D7DD2;">
+      <tr><td>
+        <p style="font-size: 14px; font-weight: bold; color: #1A4A4A; margin: 0 0 5px 0;">Como ler este laudo</p>
+        <p style="font-size: 13px; color: #333333; line-height: 1.55; margin: 0;">Este laudo técnico apresenta uma auditoria detalhada do seu perfil profissional. O objetivo é identificar as barreiras que impedem você de avançar para a fase de entrevistas e fornecer as correções de maior impacto. Cada dimensão recebe uma nota de 0 a 5 (onde 5 é excelente). O score total de 0 a 100 pondera essas notas conforme a relevância de cada dimensão. Sugestões marcadas como <em>"a confirmar"</em> dependem da sua validação — não completamos lacunas por suposição.</p>
+      </td></tr>
+    </table>
+  </div>
+</div>
+
+
+<div class="wrap">
+  <div class="section">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td width="22%" valign="top" style="text-align: center; border: 3px solid #2D7DD2; padding: 14px 8px;">
+          <p style="font-size: 12px; font-weight: bold; color: #1A4A4A; margin: 0 0 3px 0; text-transform: uppercase; letter-spacing: 1px;">Score Total</p>
+          <p style="font-size: 46px; font-weight: bold; color: #2D7DD2; margin: 0; line-height: 1;">17<span style="font-size: 19px; color: #666666;">/100</span></p>
+        </td>
+        <td width="2%"></td>
+        <td width="76%" valign="top" style="border: 3px solid #C62828; padding: 12px 16px;">
+          <p style="font-size: 12px; font-weight: bold; color: #1A4A4A; margin: 0 0 3px 0; text-transform: uppercase; letter-spacing: 1px;">Compatibilidade com Filtros Automáticos (ATS)</p>
+          <p style="font-size: 22px; font-weight: bold; color: #C62828; margin: 0 0 4px 0;">FALHA</p>
+          <p style="font-size: 13px; color: #333333; line-height: 1.5; margin: 0;">Inputs do CV e JD não foram fornecidos - impossível avaliar parseabilidade ATS</p>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+
+<div class="wrap">
+  <div class="section">
+    <table width="100%" cellpadding="14" cellspacing="0" border="0" style="background-color: #FFF8E1; border-left: 5px solid #F57F17;">
+      <tr><td>
+        <p style="font-size: 16px; font-weight: bold; color: #1A4A4A; margin: 0 0 5px 0;">Diagnóstico Rápido</p>
+        <p style="font-size: 13px; color: #333333; line-height: 1.55; margin: 0;">Baseado no Impact Mining: perfil técnico com evidências de resultado quantificado e gestão de equipe</p>
+      </td></tr>
+    </table>
+  </div>
+</div>
+
+
+<div class="wrap">
+  <p class="section-title">Scorecard — 8 Dimensões</p>
+  <table width="100%" cellpadding="0" cellspacing="5" border="0">
+    <tr>
+      <td width="49%" valign="top" class="card" style="border-left: 5px solid #C62828;">
+        <span style="font-size: 11px; color: #555555; text-transform: uppercase; font-weight: bold;">D1 — Compatibilidade com Filtros Automáticos (ATS) <span style="color: #2D7DD2;">(20%)</span></span><br>
+        <strong style="font-size: 24px; color: #C62828;">0</strong><span style="font-size: 14px; color: #999999;">/5</span><br>
+        <span style="font-size: 12px; color: #333333; line-height: 1.45;">CV não fornecido - impossível avaliar formatação, estrutura e parseabilidade ATS</span>
+      </td>
+      <td width="49%" valign="top" class="card" style="border-left: 5px solid #C62828;">
+        <span style="font-size: 11px; color: #555555; text-transform: uppercase; font-weight: bold;">D2 — Clareza do Posicionamento Profissional <span style="color: #2D7DD2;">(10%)</span></span><br>
+        <strong style="font-size: 24px; color: #C62828;">0</strong><span style="font-size: 14px; color: #999999;">/5</span><br>
+        <span style="font-size: 12px; color: #333333; line-height: 1.45;">Sem acesso ao CV para avaliar summary/positioning statement</span>
+      </td>
+    </tr>
+    <tr>
+      <td width="49%" valign="top" class="card" style="border-left: 5px solid #C62828;">
+        <span style="font-size: 11px; color: #555555; text-transform: uppercase; font-weight: bold;">D3 — Aderência à Vaga-Alvo <span style="color: #2D7DD2;">(15%)</span></span><br>
+        <strong style="font-size: 24px; color: #C62828;">0</strong><span style="font-size: 14px; color: #999999;">/5</span><br>
+        <span style="font-size: 12px; color: #333333; line-height: 1.45;">JD não fornecido - impossível avaliar alinhamento com requisitos da vaga</span>
+      </td>
+      <td width="49%" valign="top" class="card" style="border-left: 5px solid #C62828;">
+        <span style="font-size: 11px; color: #555555; text-transform: uppercase; font-weight: bold;">D4 — Organização das Competências <span style="color: #2D7DD2;">(10%)</span></span><br>
+        <strong style="font-size: 24px; color: #C62828;">0</strong><span style="font-size: 14px; color: #999999;">/5</span><br>
+        <span style="font-size: 12px; color: #333333; line-height: 1.45;">Sem CV disponível para avaliar organização de competências técnicas e comportamentais</span>
+      </td>
+    </tr>
+    <tr>
+      <td width="49%" valign="top" class="card" style="border-left: 5px solid #2D7DD2;">
+        <span style="font-size: 11px; color: #555555; text-transform: uppercase; font-weight: bold;">D5 — Evidência de Resultado e Impacto <span style="color: #2D7DD2;">(15%)</span></span><br>
+        <strong style="font-size: 24px; color: #2D7DD2;">75</strong><span style="font-size: 14px; color: #999999;">/5</span><br>
+        <span style="font-size: 12px; color: #333333; line-height: 1.45;">Impact Mining mostra evidências quantificadas: redução de 30% custos cloud e gestão de 12 pessoas</span>
+      </td>
+      <td width="49%" valign="top" class="card" style="border-left: 5px solid #2D7DD2;">
+        <span style="font-size: 11px; color: #555555; text-transform: uppercase; font-weight: bold;">D6 — Maturidade em Processos e Governança <span style="color: #2D7DD2;">(10%)</span></span><br>
+        <strong style="font-size: 24px; color: #2D7DD2;">60</strong><span style="font-size: 14px; color: #999999;">/5</span><br>
+        <span style="font-size: 12px; color: #333333; line-height: 1.45;">Gestão de equipe sugere governança, mas faltam detalhes sobre processos e frameworks</span>
+      </td>
+    </tr>
+    <tr>
+      <td width="49%" valign="top" class="card" style="border-left: 5px solid #2D7DD2;">
+        <span style="font-size: 11px; color: #555555; text-transform: uppercase; font-weight: bold;">D7 — Ferramentas e Rotina de Trabalho <span style="color: #2D7DD2;">(10%)</span></span><br>
+        <strong style="font-size: 24px; color: #2D7DD2;">40</strong><span style="font-size: 14px; color: #999999;">/5</span><br>
+        <span style="font-size: 12px; color: #333333; line-height: 1.45;">Menciona Azure, mas faltam detalhes sobre ferramentas específicas e rotinas técnicas</span>
+      </td>
+      <td width="49%" valign="top" class="card" style="border-left: 5px solid #C62828;">
+        <span style="font-size: 11px; color: #555555; text-transform: uppercase; font-weight: bold;">D8 — Coerência de Narrativa e Senioridade <span style="color: #2D7DD2;">(10%)</span></span><br>
+        <strong style="font-size: 24px; color: #C62828;">0</strong><span style="font-size: 14px; color: #999999;">/5</span><br>
+        <span style="font-size: 12px; color: #333333; line-height: 1.45;">Sem CV disponível para avaliar consistência de títulos e narrativa de carreira</span>
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+<div class="wrap" style="margin-top: 10px;">
+  <div class="section" style="page-break-inside: auto;">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td width="49%" valign="top">
+          <p class="section-title" style="font-size: 17px;">Problemas Críticos</p>
+          <table width="100%" cellpadding="8" cellspacing="0" border="0" style="font-size: 13px; color: #1A1A1A;">
+            <tr><td style="border-bottom: 1px solid #dddddd; border-left: 4px solid #C62828; padding-left: 12px; line-height: 1.5;"><strong>1.</strong> CV não fornecido</td></tr>
+            <tr><td style="border-bottom: 1px solid #dddddd; border-left: 4px solid #C62828; padding-left: 12px; line-height: 1.5;"><strong>2.</strong> JD ausente</td></tr>
+            <tr><td style="border-bottom: 1px solid #dddddd; border-left: 4px solid #C62828; padding-left: 12px; line-height: 1.5;"><strong>3.</strong> Impact Mining limitado</td></tr>
+            <tr><td style="border-bottom: 1px solid #dddddd; border-left: 4px solid #C62828; padding-left: 12px; line-height: 1.5;"><strong>4.</strong> Falta contexto de ferramentas</td></tr>
+            <tr><td style="border-left: 4px solid #C62828; padding-left: 12px; line-height: 1.5;"><strong>5.</strong> Ausência de dados básicos</td></tr>
+          </table>
+        </td>
+        <td width="2%"></td>
+        <td width="49%" valign="top">
+          <p class="section-title" style="font-size: 17px;">Melhorias de Maior Impacto</p>
+          <table width="100%" cellpadding="8" cellspacing="0" border="0" style="font-size: 13px; color: #1A1A1A;">
+            <tr><td style="border-bottom: 1px solid #dddddd; border-left: 4px solid #2D7DD2; padding-left: 12px; line-height: 1.5;"><strong>1.</strong> Quantificar gestão de equipe</td></tr>
+            <tr><td style="border-bottom: 1px solid #dddddd; border-left: 4px solid #2D7DD2; padding-left: 12px; line-height: 1.5;"><strong>2.</strong> Contextualizar redução de custos</td></tr>
+            <tr><td style="border-bottom: 1px solid #dddddd; border-left: 4px solid #2D7DD2; padding-left: 12px; line-height: 1.5;"><strong>3.</strong> Especificar serviços Azure</td></tr>
+            <tr><td style="border-bottom: 1px solid #dddddd; border-left: 4px solid #2D7DD2; padding-left: 12px; line-height: 1.5;"><strong>4.</strong> Adicionar métricas de qualidade</td></tr>
+            <tr><td style="border-left: 4px solid #2D7DD2; padding-left: 12px; line-height: 1.5;"><strong>5.</strong> Incluir metodologias</td></tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+
+
+<div class="wrap">
+  <div class="no-orphan">
+    <p class="section-title">Sugestões de Texto — Pronto para Usar</p>
+    <table width="100%" cellpadding="14" cellspacing="0" border="0" style="margin-bottom: 10px; background-color: #F0F7FF; border-left: 5px solid #2D7DD2;">
+      <tr><td>
+        <p style="font-size: 12px; font-weight: bold; color: #1A4A4A; text-transform: uppercase; margin: 0 0 5px 0;">Resumo Profissional (sugestão para reescrita)</p>
+        <p style="font-size: 13px; color: #1A1A1A; line-height: 1.55; margin: 0; font-style: italic;">a confirmar</p>
+      </td></tr>
+    </table>
+    <table width="100%" cellpadding="14" cellspacing="0" border="0" style="background-color: #F0F7FF; border-left: 5px solid #2D7DD2; margin-bottom: 14px;">
+      <tr><td>
+        <p style="font-size: 12px; font-weight: bold; color: #1A4A4A; text-transform: uppercase; margin: 0 0 5px 0;">Bullets de experiência (sugestões de reescrita)</p>
+        <p style="font-size: 13px; color: #1A1A1A; line-height: 1.55; margin: 0 0 6px 0;">• Otimizou custos de infraestrutura cloud em 30% (R$ 15k/mês) através de rightsizing e automação Azure</p><p style="font-size: 13px; color: #1A1A1A; line-height: 1.55; margin: 0 0 6px 0;">• Liderou equipe de 12 profissionais em projeto de migração Azure, entregando no prazo e orçamento</p><p style="font-size: 13px; color: #1A1A1A; line-height: 1.55; margin: 0 0 6px 0;">• </p><p style="font-size: 13px; color: #1A1A1A; line-height: 1.55; margin: 0;">• </p>
+      </td></tr>
+    </table>
+  </div>
+</div>
+
+
+
+<div class="wrap">
+  <div class="no-orphan">
+    <p class="section-title">Ações Prioritárias — Por Onde Começar</p>
+    <table width="100%" cellpadding="8" cellspacing="0" border="0" style="font-size: 13px; color: #1A1A1A; line-height: 1.5;">
+      <tr><td style="border-bottom: 1px solid #dddddd;"><strong style="color: #2D7DD2;">1.</strong> <strong>Fornecer CV em PDF para análise completa de formato e conteúdo</strong></td></tr>
+      <tr><td style="border-bottom: 1px solid #dddddd;"><strong style="color: #2D7DD2;">2.</strong> <strong>Incluir job description da vaga-alvo para análise de fit</strong></td></tr>
+      <tr><td style="border-bottom: 1px solid #dddddd;"><strong style="color: #2D7DD2;">3.</strong> <strong>Expandir Impact Mining com mais 3-5 realizações quantificadas</strong></td></tr>
+      <tr><td style="border-bottom: 1px solid #dddddd;"><strong style="color: #2D7DD2;">4.</strong> <strong>Detalhar serviços Azure específicos e nível de expertise</strong></td></tr>
+      <tr><td><strong style="color: #2D7DD2;">5.</strong> <strong>Confirmar experiência total, formação acadêmica e certificações</strong></td></tr>
+    </table>
+  </div>
+</div>
+
+
+
+<div class="wrap" style="margin-top: 10px;">
+  <div class="section">
+    <p class="section-title">Aderência à Vaga-Alvo — Vaga-Alvo</p>
+
+    
+    <table width="100%" cellpadding="7" cellspacing="0" border="0" style="font-size: 13px;">
+      <tr style="background-color: #1A4A4A; -webkit-print-color-adjust: exact;">
+        <td width="42%" style="padding: 8px; color: white; font-weight: bold;">Requisito da vaga</td>
+        <td width="14%" style="padding: 8px; color: white; font-weight: bold; text-align: center;">Status</td>
+        <td width="44%" style="padding: 8px; color: white; font-weight: bold;">Evidência no seu CV</td>
+      </tr>
+      <tr style="background-color: #f9f9f9;"><td style="padding: 8px; border-bottom: 1px solid #ddd;"></td><td style="padding: 8px; border-bottom: 1px solid #ddd; text-align: center; color: #C62828; font-weight: bold;"></td><td style="padding: 8px; border-bottom: 1px solid #ddd;"></td></tr><tr><td style="padding: 8px; border-bottom: 1px solid #ddd;"></td><td style="padding: 8px; border-bottom: 1px solid #ddd; text-align: center; color: #C62828; font-weight: bold;"></td><td style="padding: 8px; border-bottom: 1px solid #ddd;"></td></tr><tr style="background-color: #f9f9f9;"><td style="padding: 8px; border-bottom: 1px solid #ddd;"></td><td style="padding: 8px; border-bottom: 1px solid #ddd; text-align: center; color: #C62828; font-weight: bold;"></td><td style="padding: 8px; border-bottom: 1px solid #ddd;"></td></tr><tr><td style="padding: 8px; border-bottom: 1px solid #ddd;"></td><td style="padding: 8px; border-bottom: 1px solid #ddd; text-align: center; color: #C62828; font-weight: bold;"></td><td style="padding: 8px; border-bottom: 1px solid #ddd;"></td></tr><tr style="background-color: #f9f9f9;"><td style="padding: 8px; border-bottom: 1px solid #ddd;"></td><td style="padding: 8px; border-bottom: 1px solid #ddd; text-align: center; color: #C62828; font-weight: bold;"></td><td style="padding: 8px; border-bottom: 1px solid #ddd;"></td></tr><tr><td style="padding: 8px; border-bottom: 1px solid #ddd;"></td><td style="padding: 8px; border-bottom: 1px solid #ddd; text-align: center; color: #C62828; font-weight: bold;"></td><td style="padding: 8px; border-bottom: 1px solid #ddd;"></td></tr><tr style="background-color: #f9f9f9;"><td style="padding: 8px; border-bottom: 1px solid #ddd;"></td><td style="padding: 8px; border-bottom: 1px solid #ddd; text-align: center; color: #C62828; font-weight: bold;"></td><td style="padding: 8px; border-bottom: 1px solid #ddd;"></td></tr><tr><td style="padding: 8px;"></td><td style="padding: 8px; text-align: center; color: #C62828; font-weight: bold;"></td><td style="padding: 8px;"></td></tr>
+    </table>
+
+    
+    
+
+  </div>
+</div>
+
+
+
+<div class="wrap">
+  <div class="section" style="page-break-inside: auto;">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td width="49%" valign="top">
+          <p style="font-size: 16px; font-weight: bold; color: #2D7DD2; margin: 0 0 8px 0;">Pontos que dependem da sua validação</p>
+          <p style="font-size: 12px; color: #666666; margin: 0 0 6px 0;">Não encontramos evidência suficiente no material enviado. Confirme antes de incluir no CV:</p>
+          <table width="100%" cellpadding="5" cellspacing="0" border="0">
+            <tr><td style="border-bottom: 1px solid #ddd; font-size: 13px; color: #333333; padding: 5px 0;">• Experiência total em anos</td></tr><tr><td style="border-bottom: 1px solid #ddd; font-size: 13px; color: #333333; padding: 5px 0;">• Formação acadêmica</td></tr><tr><td style="border-bottom: 1px solid #ddd; font-size: 13px; color: #333333; padding: 5px 0;">• Certificações Azure ou cloud</td></tr><tr><td style="border-bottom: 1px solid #ddd; font-size: 13px; color: #333333; padding: 5px 0;">• Setor/indústria das empresas</td></tr><tr><td style="font-size: 13px; color: #333333; padding: 5px 0;">• Tamanho das organizações</td></tr>
+          </table>
+        </td>
+        <td width="2%"></td>
+        <td width="49%" valign="top">
+          <p style="font-size: 16px; font-weight: bold; color: #2D7DD2; margin: 0 0 8px 0;">Notas de Precisão</p>
+          <table width="100%" cellpadding="10" cellspacing="0" border="0" style="border: 1px solid #ddd; background-color: #f9f9f9;">
+            <tr><td>
+              <p style="font-size: 13px; font-weight: bold; color: #F57F17; margin: 0 0 5px 0;">Alguns pontos a verificar</p>
+              <p style="font-size: 13px; color: #333333; line-height: 1.5; margin: 0 0 4px 0;">• Impact Mining limitado a 2 pontos - insuficiente para validação cruzada</p><p style="font-size: 13px; color: #333333; line-height: 1.5; margin: 0 0 4px 0;">• Ausência de CV impede verificação de consistência temporal e progressão</p><p style="font-size: 13px; color: #333333; line-height: 1.5; margin: 0;">• </p>
+            </td></tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+
+
+<div class="wrap">
+  <div class="section">
+    <table width="100%" cellpadding="12" cellspacing="0" border="0" style="border: 1px solid #ddd;">
+      <tr><td>
+        <p style="font-size: 11px; font-weight: bold; color: #666666; text-transform: uppercase; margin: 0 0 4px 0;">Conteúdo que pode ser reduzido ou removido para esta vaga</p>
+        <p style="font-size: 13px; color: #333333; margin: 0;">Análise de JD indisponível - impossível determinar prioridades específicas da vaga</p>
+      </td></tr>
+    </table>
+  </div>
+</div>
+
+
+<div class="wrap" style="margin-top: 14px;">
+  <table width="100%" cellpadding="12" cellspacing="0" border="0" style="border-top: 3px solid #1A4A4A; background-color: #f4f4f4;">
+    <tr><td style="font-size: 12px; color: #666666; line-height: 1.5;">
+      <p style="margin: 0;"><strong>Aviso:</strong> Este laudo é um diagnóstico técnico de perfil profissional. Não constitui promessa de resultado, entrevista ou aprovação em processos seletivos. Sugestões marcadas como <em>"a confirmar"</em> dependem da sua validação antes do uso. As sugestões de texto são rascunhos — adapte ao seu contexto antes de incluir no CV.</p>
+      <p style="margin: 6px 0 0 0; color: #1A4A4A;"><strong>Radar de Perfil</strong> — Diagnóstico técnico de perfil profissional &nbsp;|&nbsp; <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="680b07061c091c07281a090c091a0c0d180d1a0e01044
